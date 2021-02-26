@@ -1,19 +1,264 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="git.js"></script>
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Joshua Kiprono</title>
+    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css"/>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="main.css"/>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+    <!-- Home section -->
+    <section id="home">
+      <!-- Navigation -->
+      <nav class="navbar tm-navbar" id="tmNav">
+        <div class="container">
+          <div class="tm-next">
+              <a href="#about" class="navbar-brand"> JOSHUA KIPRONO </a>
+          </div>
+          <div class ="Navlinks">
+          <div class="items"> <a href="#about">About</a></div>
+          <div class="items"> <a href="#class">Projects</a></div>
+          <div class="items"> <a href="#Experience">Experience</a></div>
+          <div class="items"> <a href="/JResume.pdf">Resume</a></div>
+          <div class="items"> <a href="#githubOverview">Github</a></div>
+          <div class="items"> <a href="#footer">Contact</a></div>
+        </div>
+        </div>
+      </nav>
+      <div class="text-center tm-hero-text-container">
+        <div class="tm-hero-text-container-inner">
+        <div class="window">
+          <div class="titlebar">
+            <div class="buttons">
+            </div>
+            <!-- window title -->
+          </div>
+  <div id="t">
+          <p>Joshua.Interests()
+            : <span style="color: #507d2a">"Coding", "Creative Writing"</span></p>
+          <p>Joshua.Root()
+             : <span style="color: #507d2a">"Kenya"</span></p>
+          <p>Joshua.Major()
+             : <span style="color: #507d2a"> "Computer Science" </span> </p>
+          <p>Joshua.ExpectedGraduation()
+            : <span style="color: #507d2a"> 2023 </span></p>
+          <p>Joshua.MoreInfo(): <span style="color: #507d2a"> scroll down </span></p>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="classIntro">
+      <center>
+      <p> About </p>
+    </center>
     </div>
-  </body>
+    <section id="about" name = "next" class="tm-section-pad-top t">
+      <div class="container c">
+        <div class="row r">
+          <div class="col-md-3 col-sm-4">
+            <img src="img/joshuakiprono.jpg" class="img-circle2 img img2" alt="About">
+          </div>
+    			<div class="col-md-9 col-sm-12" >
+    				<div class="about-thumb">
+              <p> I am currently a sophomore majoring in Computer Science at Claflin University, SC. My interest in computing is borne out of the desire to be a creator of my interests, which is my artistic side, as well as the desire to satisfy and grow problem solving and analytical skills.</p>
+              <p>I have a primary interest in growing my full stack dev capabilities while my secondary and long term interests are Cyber Security and Artificial Intelligence. and I am open to any opportunity that will grow my skills and ultimately contribute in meaningful contributions to communities that I find myself in.</p>
+              <center>
+              <a type="button" class="btn btn-primary btn-lg" href="JResume.pdf" target="_blank" style= "color: white">Resume</a>
+              </center>
+    				</div>
+    			</div>
+        </div>
+    </section>
+    <div class="classIntro">
+      <center>
+      <p> Projects</p>
+    </center>
+    </div>
+    <section id="class" name = "next" class="tm-section-pad-top t">
+      <div class="container c">
+        <div class="row r">
+          <div class="col-md-6 col-sm-12 a"  >
+            <div class="about-thumb">
+               <center><strong> Application Tracker & Manager </strong></center>
+               <div class="ImageHolder">
+                 <img class = "ProjectImg" src="/Productivity2.jpg" alt="">
+               </div>
+              <p> A web application built on Django to help students share and keep track of opportunities.
+                The application also helps instructors post opportunities that students can see and apply to.
+                  </p>
+                  <center>
+                  <a type="button" class="btn btn-primary btn-lg" href="https://applicationstrack.herokuapp.com/" target="_blank" style= "color: white">View Live</a>
+                  </center>
+          </div>
+          </div>
+          <div class="col-md-6 col-sm-12 a" >
+            <div class="project-thumb">
+              <center><strong>Twitter Sentiment Analysis</strong></center>
+              <div class="ImageHolder">
+              <img class = "ProjectImg" src="/sentiment.jpg" alt="">
+            </div>
+             <p>A web application built on flask that gets twitter data and uses NLP to determine sentiments. The processed sentimets are displayed using Dash framework as positive, negative and neutral sentiments </p>
+             <center>
+             <a type="button" class="btn btn-primary btn-lg" href="https://sentiment-analysiss.herokuapp.com/" target="_blank" style= "color: white">View Live</a>
+             </center>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 a" >
+            <div class="project-thumb">
+              <center><strong>Speech to Tweet</strong></center>
+              <div class="ImageHolder">
+              <img class = "ProjectImg" src="Twitter2.jpg" alt="">
+            </div>
+             <p>This is a python based voice assistant that utilizes Google speech synthesis on an iOS to read trending hashtags on twitter, top trending tweets on twitter and allow the user to post tweets vocally.
+               The assistant is activated by a specific trigger word.</p>
+             <center>
+             <a type="button" class="btn btn-primary btn-lg" href="https://github.com/JoshuaKiplimo/Twitter-Voice-Assistant" target="_blank" style= "color: white">Github</a>
+             </center>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 a" >
+                      <div class="project-thumb">
+                        <center><strong>GroupMe Bot</strong></center>
+                        <div class="ImageHolder">
+                        <img class = "ProjectImg" src="GroupMe2.jpg" alt="">
+                      </div>
+                       <p>A bot that lives in GroupMe that students can use to tell weather that ranges the next five days and sends prompts if rain is anticipated to fall or temperature falls below a certain level for the coming day.</p>
+                       <center>
+                       <a type="button" class="btn btn-primary btn-lg" href="https://github.com/JoshuaKiplimo/Weather-Bot" target="_blank" style= "color: white">Github</a>
+                       </center>
+                      </div>
+                    </div>
+        </div>
+    </section>
+    <div class="classIntro">
+      <center>
+      <p> Github </p>
+    </center>
+    </div>
+    <section id= "githubOverview" class="tm-section-pad-top t">
+      <center><div class="gitDescription">  <p> These are my three latest repos on github</p></div></center>
+      <div id="github">
+      </div>
+    </section>
+    <div class="classIntro">
+      <center>
+      <p>Experience</p>
+    </center>
+    </div>
+    <section id="Experience" name = "next" class="tm-section-pad-top t">
+      <div class="container">
+          <div class="row Google">
+            <div class="col">
+              <center><img class = "logo" src="/google-logo.png" alt=""></center>
+            </div>
+            <div class="col leftText">
+              <p>Google Software Product Sprint</p>
+              <p>February 15 - Current</p>
+              <p>Apprenticeship</p>
+            </div>
+            <div class="col rightText">
+              <p>An 11-week virtual program to build a software project in Java with a small group of peers and with the guidance of a Google engineer.</p>
+            </div>
+          </div>
+          <div class="row CodePath">
+            <div class="col">
+                <center><img class = "logo"  src="/code-path.png" alt=""></center>
+            </div>
+            <div class="col leftText">
+              <p>CodePath Android University</p>
+              <p>October - December </p>
+              <p>Android dev</p>
+            </div>
+            <div class="col rightText">
+              <p>An 8 week program for android app development using Java. I created a Netflix, Twitter and an Instagram clone apps.</p>
+            </div>
+          </div>
+          <div class="row CPI">
+            <div class="col">
+              <center><img class = "logo"src="/palm.png" alt=""></center>
+            </div>
+            <div class="col leftText">
+              <p>Careers Pathway Initiative</p>
+              <p>Summer 2020</p>
+              <p>Research intern</p>
+            </div>
+            <div class="col rightText">
+              <p>I created a web application to help students and instructors manage, share, and keep track of applications. I then conducted User Interface, User Design, and Security research on the web application to determine user preference and user needs which will be used to guide future developments of the web application.</p>
+            </div>
+          </div>
+          <div class="row Tutor">
+            <div class="col text">
+              <center><img class= "logo" src="/CU2.png" alt=""></center>
+            </div>
+            <div class="col leftText">
+              <p>Claflin University</p>
+              <p>2020 - current</p>
+              <p>Tutor</p>
+            </div>
+            <div class="col rightText">
+            <p>I tutor mathematics and Computer Science courses - Introduction to Java. </p>
+            </div>
+          </div>
+        <div class="row NSBE">
+          <div class="col">
+            <center><img class= "logo" src="/NSBE.png" alt=""></center>
+          </div>
+          <div class="col leftText">
+            <p>National Society of Black Engineers</p>
+            <p>2020 - current</p>
+            <p>Volunteer</p>
+          </div>
+          <div class="col rightText">
+            <p>I am responsible for budgeting and seeking funds for the society</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!--This is a section for social buttons/connect--->
+<section id="footer" class="tm-section-pad-top tm-parallax-2">
+         <center>
+             <div class="LC">
+            Connect ?
+             </div>
+           </center>
+      <div class="social-buttons">
+           <a href="https://twitter.com/joshua_kiprono" class="social-buttons__button social-button social-button--twitter" aria-label="Twitter">
+             <span class="social-button__inner">
+              <i class="fab fa-twitter"></i>
+             </span>
+           </a>
+           <a href="#" class="social-buttons__button social-button social-button--linkedin" aria-label="LinkedIn">
+             <span class="social-button__inner">
+              <i class="fab fa-linkedin-in"></i>
+             </span>
+           </a>
+           <a href="#" class="social-buttons__button social-button social-button--mail" aria-label="Mail">
+             <span class="social-button__inner">
+              <i class="fas fa-envelope"></i>
+             </span>
+           </a>
+           <a href="#" class="social-buttons__button social-button social-button--github" aria-label="GitHub">
+             <span class="social-button__inner">
+              <i class="fab fa-github"></i>
+             </span>
+           </a>
+          </div>
+  </section>
+     </body>
+      <!--This is a script that gets data from github API and populates data in the #github div.
+       The function loadRepositiories is located at git.js --->
+        <script type="text/javascript">
+            $(document).ready(function(){
+             $("#github").loadRepositories("JoshuaKiplimo");
+          });
+      </script>
 </html>
+
