@@ -1,28 +1,69 @@
-// Copyright 2020 Google LLC
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     https://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+// This is a jquery file with functions used to retrieve data from github. 
+//Credits to https://gist.github.com/developius/903a8876e6991e353e4b
 
-/**
- * Adds a random greeting to the page.
- */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
-
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+jQuery.githubUser = function(username, callback) {
+   jQuery.getJSON('https://api.github.com/users/'+username+'/repos?callback=?',callback)
 }
+jQuery.githubRepoContributors = function(username, repo, callback) {
+   jQuery.getJSON('https://api.github.com/repos/'+username+'/'+repo+'/contributors'+'?callback=?',callback)
+}
+jQuery.githubOrgMembers = function(org,callback){
+   jQuery.getJSON('https://api.github.com/orgs/' + org + '/public_members?callback=?',callback)
+}
+jQuery.githubRepoUpdateDate = function(username, repo, callback) {
+   jQuery.getJSON('https://api.github.com/repos/'+username+'/'+repo+'?callback=?',callback)
+}
+jQuery.fn.loadRepositories = function(username) {
+    this.html("<span>Querying GitHub for " + username +"'s repositories...</span>");
+    var target = this;
+    $.githubUser(username, function(data) {
+        var repos = data.data; // JSON Parsing
+        sortByName(repos);
+        repos.length = 3
+        console.log(repos);
+        var list = $('<dl/>');
+        target.empty().append(list);
+        $(repos).each(function() {
+            if (this.name != (username.toLowerCase()+'.github.com') && this.name != (username.toLowerCase()+'.github.io')) {
+                list.append('<dt class = "gd"><a class = "gitdata" href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a>'+(this.language?('<p class = "gitdata"> Language: '+this.language+'</p>'):'')+'' + '<p class = "gitdata">Description: ' +this.description + '</p>'+ '<p class = "gitdata">Forks: '+  this.forks + '</p>'+ '</dt>');
+            }
+        });
+      });
+    function sortByName(repos) {
+        repos.sort(function(a,b) {
+        return b.created_at - a.created_at;
+       });
+    }
+};
+jQuery.fn.loadContributors = function(user,repo){
+	var target = this;
+	$.githubRepoContributors(user,repo,function(data){
+		var contributorHTML = "";
+		var contributors = data.data;
+		$(contributors).each(function(){
+			contributorHTML += "<a href='" + this.html_url + "'><img style='width:40px;padding:0px;margin:5px 5px 0px 0px;vertical-align:middle;border-radius:10px;' src='" + this.avatar_url + "' title='" + this.login + "'></a>";
+		});
+		target.html(contributorHTML);
+	});
+};
+jQuery.fn.loadOrgMembers = function(org){
+        var target = this;
+        $.githubOrgMembers(org,function(data){
+                var memberHTML = "";
+		var members = data.data;
+                $(members).each(function(){
+                        memberHTML += "<a href='" + this.html_url + "'><img style='width:40px;padding:0px;margin:5px 5px 0px 0px;vertical-align:middle;border-radius:10px;' src='" + this.avatar_url + "' title='" + this.login + "'></a>";
+                });
+                target.html(memberHTML);
+        });
+};
+jQuery.fn.loadRepoUpdateDate = function(user,repo){
+        var target = this;
+        $.githubRepoUpdateDate(user,repo,function(data){
+                var dateHTML = "";
+                var data = data.data;
+                dateHTML += "<p class='repo-owner'>" + data.updated_at.replace("T", " ").replace("Z","") + "</p>";
+                target.html(dateHTML);
+        });
+};
+
