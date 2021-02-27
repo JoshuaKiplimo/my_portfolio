@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="icon" href="Images/favicon.ico">
+    <meta content="width=device-width, initial-scale=1" name="viewport" /> <!--To optimizations in smaller screens-->
+    <meta charset="UTF-8" />
+    <title>Joshua Kiprono</title>
+    <!--Link to Bootstrap CDN - Using bootstap to also optimize for smaller screens-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
-</html>
+    <!-- Home section -->
+    <section id="home">
+      <!-- Main Navigation Bar-->
+      <nav class="navbar" id="tmNav">
+        <div class="container"> <!--Bootstrap main container-->
+          <div class="tm-next">
+              <a href="#about" class="navbar-brand"> JOSHUA KIPRONO </a>
+          </div>
+          <div class ="Navlinks">
+          <div class="items"> <a href="#about">About</a></div>
+          <div class="items"> <a href="#class">Projects</a></div>
+          <div class="items"> <a href="#Experience">Experience</a></div>
+          <div class="items items2 "> <a href="/JResume.pdf">Resume</a></div>
+          <div class="items items2 items3"> <a href="#githubOverview">Github</a></div>
+          <div class="items items2 items3"> <a href="#footer">Contact</a></div>    
+        </div>
+        </div>
+      </nav>
