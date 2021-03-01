@@ -65,21 +65,84 @@ a, a:hover {
  margin-top: 5%;
  margin-left: 10%;
 }
+/*this is the container that holds the about section*/
+.About-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.Aboutcontainer-inner {
+  margin-top: -90px;
+}
+/*Stying for the window that holds my info*/
+.window {
+  color: white;
+  background: #343434;
+  width: 35%;
+  height: 90%;
+  margin: auto;
+  margin-top: 9.5vh;
+  border: 1px solid #acacac;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: 'Monaco', Courier New;
+}
+.titlebar {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ebebeb, color-stop(1.0, #d5d5d5)));
+  background: -webkit-linear-gradient(top, #ebebeb, #d5d5d5);
+  background: -moz-linear-gradient(top, #ebebeb, #d5d5d5);
+  background: -ms-linear-gradient(top, #ebebeb, #d5d5d5);
+  background: -o-linear-gradient(top, #ebebeb, #d5d5d5);
+  background: linear-gradient(top, #ebebeb, #d5d5d5);
+  color: white;
+  font-size: 11pt;
+  line-height: 20px;
+  text-align: center;
+  width: 100%;
+  height: 20px;
+  border-top: 1px solid #f3f1f3;
+  border-bottom: 1px solid #b1aeb1;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  cursor: default;
+}
+.buttons {
+  padding-left: 8px;
+  padding-top: 3px;
+  float: left;
+  line-height: 0px;
+}
+#windowText{
+  color: white;
+  font-family: 'Monaco', Courier New;
+}
+.Wtext{
+  float: left;
+  padding: 5px;
+  left: 5px;
+}
 /*OPTIMIZATIONS FOR SMALLER SCREENS*/
-
 @media screen and (max-width:384px) {
-       .navbar-brand{
-           top: 30%;
-           left: 20%;
-       }
+    .navbar-brand{
+        top: 30%;
+        left: 20%;
+        font-size: 15px;
+    }
       .Navlinks{
          display: none;
       } 
-}
+}       
 @media screen and (min-width:384px) and (max-width: 515px)  {
     .navbar{
-       height: 25%;
-       margin-bottom: 5%;  
+       height: 20%;
+       margin-bottom: 7%;  
     }
     .Navlinks{
         margin-left: 5%;
@@ -101,7 +164,7 @@ a, a:hover {
         left: 25%;
         right: 25%;
         width: auto;  
-    }
+    }    
 }
 @media screen and (min-width:483px) and (max-width: 1000px) {
     .Navlinks{
@@ -110,4 +173,14 @@ a, a:hover {
     .items3{
         display: none;
        }
+    }
+@media screen and (max-width: 562px) {
+    .window {
+       width: 100%;
+       height: 100%;  
+      }
+    #windowText p{
+        float: left;
+        left: 0px; 
+      }
     }
