@@ -103,11 +103,11 @@ a, a:hover {
         width: auto;  
     }
 }
-    @media screen and (min-width:483px) and (max-width: 1000px) {
-       .Navlinks{
+@media screen and (min-width:483px) and (max-width: 1000px) {
+    .Navlinks{
         margin-left: 9%;
     }
-       .items3{
-           display: none;
+    .items3{
+        display: none;
        }
     }
