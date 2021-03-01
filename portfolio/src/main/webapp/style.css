@@ -1,9 +1,113 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+ .alert{
+     display: none;    
+ }
+ body {
+    background-image: url('Images/back-2.jpg');
+    color: rgb(252, 252, 252);
+    padding: 1rem;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    font-family: 'Playfair Display', serif;
 }
+a, a:hover {
+    text-decoration: none;
+}
+#home {
+    background-color:#655552;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 375px;
+    position: relative;
+    width: 100%;
+}
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top:0px;
+    transition: all 0.3s ease;
+    background-color: #668B8B;
+    width:100%;
+    left:0px;
+    right: 0px;
+    height: 15%;
+}
+/*For the title Joshua Kiprono*/
+.navbar-brand {
+    color: white;
+    font-size: 25px;
+    font-family: 'Monaco', Courier New;
+    letter-spacing: 0.1em;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    top: 7%;
+}
+/*For nav link items*/
+.items{
+  display: block;
+  justify-content: center;
+  float: left;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+.items a{
+    color: white; 
+    letter-spacing: 0.1em;
+}
+.Navlinks{
+  justify-content: center;
+  width: 100%;
+ margin-top: 5%;
+ margin-left: 10%;
+}
+/*OPTIMIZATIONS FOR SMALLER SCREENS*/
 
-#greeting-container {
-  margin-top: 20px;
+@media screen and (max-width:384px) {
+       .navbar-brand{
+           top: 30%;
+           left: 20%;
+       }
+      .Navlinks{
+         display: none;
+      } 
 }
+@media screen and (min-width:384px) and (max-width: 515px)  {
+    .navbar{
+       height: 25%;
+       margin-bottom: 5%;  
+    }
+    .Navlinks{
+        margin-left: 5%;
+    }
+    .items{
+     margin: 2% 2% 2% 4%;
+     font-size: 1.0em;
+     border: 1px solid white;
+     border-radius: 3px;
+     width: auto;
+    }
+    .items a{
+        padding: 2%;   
+    }
+    .items2{
+        display: none;
+    }
+    .navbar-brand {
+        left: 25%;
+        right: 25%;
+        width: auto;  
+    }
+}
+@media screen and (min-width:483px) and (max-width: 1000px) {
+    .Navlinks{
+        margin-left: 9%;
+    }
+    .items3{
+        display: none;
+       }
+    }
