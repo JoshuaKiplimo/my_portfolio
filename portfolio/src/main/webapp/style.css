@@ -128,16 +128,82 @@ a, a:hover {
   padding: 5px;
   left: 5px;
 }
+/*Styling for about section*/
+#about{
+    width:100%;
+    min-height: 700px;
+    max-height: 2000px;
+   }
+.AboutSection{
+	background-color: #cfcfc4;
+}
+.AboutSection {
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+.AboutSectionText{
+     left: 0px;
+     right: 0px;
+     width: 100%;
+     text-align: left;
+     color: black;
+     background: #ffffff;
+     border-radius: 4px;
+     padding: 10%;
+     position: relative;
+	 margin: 5%;
+     text-align:justify;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    line-height: 2em;
+    font-size: 20px;
+   }
+   .AboutSectionImage{
+    border: 9px solid #ffffff;
+    position: absolute;
+	border-radius: 50%;
+	right: -60px;
+	top: 50px;
+	width: 300px;
+	height: 300px;
+}
+.classIntro{
+    width: 100%;
+    bottom: 0px;
+    height: 30%;
+}
+.classIntro p{
+    color: white;
+    font-size: 25px;
+    font-family: 'Monaco', Courier New;
+    display: block;
+    width: 50%;
+    padding: 2% 2%;
+}
 /*OPTIMIZATIONS FOR SMALLER SCREENS*/
+@media screen and (max-width:300px) {
+     .AboutSectionImage{
+        display: none;
+}
+     .AboutSectionText{
+        width: 100%;
+     }   
+}
 @media screen and (max-width:384px) {
     .navbar-brand{
         top: 30%;
         left: 20%;
         font-size: 15px;
     }
-      .Navlinks{
-         display: none;
-      } 
+    .Navlinks{
+        display: none;
+      }
+    .AboutSectionImage{
+        width: 20%;
+        height: 20%;
+        right: 15px;
+        left: 20px;
+}
 }       
 @media screen and (min-width:384px) and (max-width: 515px)  {
     .navbar{
@@ -183,4 +249,33 @@ a, a:hover {
         float: left;
         left: 0px; 
       }
+    .AboutSectionImage{
+        width: 250px;
+        height: 250px;
+        margin: auto;
+}
     }
+@media screen and (max-width: 760px){
+    .AboutSectionText{
+        width: 80%;
+        margin: auto;
+        margin-top: 20%; 
+    }
+   .AboutSectionImage{
+        position:relative;
+        margin: auto;
+     }
+}
+@media screen and (min-width:765px) and (max-width: 1000px)  {
+    .AboutSectionText{
+        width: 80%;
+        margin: auto;
+        margin-top: 10%;
+   }
+   .AboutSectionImage{ 
+        right: -75px;
+        top: 50px;
+        width: 300px;
+        height: 300px;
+}
+}
