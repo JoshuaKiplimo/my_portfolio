@@ -183,7 +183,7 @@ a, a:hover {
 /*Section Holding styling for projects*/
 #Projects{
      min-height: 1000px;
-     max-height: 4000px;
+     max-height: 5500px;
      background-color: #cfcfc4;
      padding-top: 100px;
    }
@@ -200,7 +200,9 @@ a, a:hover {
     Margin-top: 3%;
 }
 .ImageHolder{
-    width: 400px;
+    margin-top: 20%;
+    margin-bottom: 30%;
+    width: 300px;
     height: 300px;
     justify-content: center;
 }
@@ -210,6 +212,11 @@ a, a:hover {
     top: 50%;
     left: 50%;
 }
+.projectButton{
+   position: absolute;
+   bottom:   20px;
+   left: 40%;
+}
 /*OPTIMIZATIONS FOR SMALLER SCREENS*/
 @media screen and (max-width:300px) {
      .AboutSectionImage{
@@ -217,7 +224,9 @@ a, a:hover {
 }
      .AboutSectionText{
         width: 100%;
-     }   
+     } 
+     
+   
 }
 @media screen and (max-width:384px) {
     .navbar-brand{
@@ -233,7 +242,30 @@ a, a:hover {
         height: 20%;
         right: 15px;
         left: 20px;
+    }
+     .ImageHolder{
+    
+    margin-top: 20%;
+    margin-bottom: 30%;
+    
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    left: 20px;
+    }
+   .ProjectImg{
+    
+    width: 100px;
+    height: 100px;
+    top: 30%;
+    
+   }
+   .projectButton{
+   position: absolute;
+   bottom:   20px;
+   left: 30%;
 }
+    
 }       
 @media screen and (min-width:384px) and (max-width: 515px)  {
     .navbar{
@@ -260,7 +292,26 @@ a, a:hover {
         left: 25%;
         right: 25%;
         width: auto;  
-    }    
+    }
+    .ImageHolder{
+    
+    margin-top: 40%;
+    margin-bottom: 40%;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    }
+   .ProjectImg{
+    width:200px;
+    height:200px;
+    top: 50%;
+    left: 70%;
+   } 
+   .projectButton{
+   position: absolute;
+   bottom:   20px;
+   left: 30%;
+} 
 }
 @media screen and (min-width:483px) and (max-width: 1000px) {
     .Navlinks{
@@ -296,7 +347,7 @@ a, a:hover {
         margin: auto;
      }
 }
-@media screen and (min-width:765px) and (max-width: 1000px)  {
+@media screen and (min-width:765px) and (max-width: 995px)  {
     .AboutSectionText{
         width: 80%;
         margin: auto;
@@ -307,5 +358,27 @@ a, a:hover {
         top: 50px;
         width: 300px;
         height: 300px;
+    }
+     .ImageHolder{
+        
+        margin-top: 50%;
+        margin-bottom: 50%;
+        width:150px;
+        height:150px;
+        justify-content: center;
+    }
+   .ProjectImg{
+        width:150px;
+        height:150px;
+        top: 50%;
+        left: 80%;
+   } 
+   .project-thumb {
+       min-height: 1000px;
+   }
+   .projectButton{
+   position: absolute;
+   bottom:   20px;
+   left: 30%;
 }
 }
