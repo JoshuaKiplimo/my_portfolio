@@ -217,6 +217,134 @@ a, a:hover {
    bottom:   20px;
    left: 40%;
 }
+#Experience{
+   min-height: 1700px;
+   max-height: 4000px;
+   background-color: #cfcfc4;
+   padding-top: 80px;
+   color: black;
+   }
+.leftText {
+  align-content: center;
+  margin: 1% 1%;
+  font-weight: bold;
+  text-align: center;
+}
+.rightText{
+  justify-content: center;
+  text-align: justify;
+}
+.google, .CodePath, .CPI, .Tutor, .NSBE{
+  margin-top: 10%;
+}
+.logo{
+  width: 200px;
+  height: 200px;
+}
+/*connect section*/
+.tm-footer {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+}
+.tm-footer a {
+	color: #fff;
+}
+.tm-footer a:hover {
+	color: #9CF;
+}
+.tm-footer-link {
+  color: white;
+}
+.tm-footer-link:hover,
+.tm-footer-link:focus {
+  color: #38B;
+  text-decoration: none;
+}
+#footer{
+  background-color: #ddd;
+  padding: 100px 20px 20px 20px;
+}
+footer{
+  color: black;
+  bottom: 5px;
+  margin-top: 1%;
+}
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -10px;
+}
+.social-buttons__button {
+  margin: 10px 5px 0;
+}
+.social-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 70px;
+  height: 70px;
+  text-decoration: none;
+}
+.social-button__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border-radius: 100%;
+  background: #fff;
+  text-align: center;
+}
+.social-button i, .social-button svg {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.social-button i {
+  font-size: 28px;
+}
+.social-button svg {
+  height: 40%;
+  width: 40%;
+}
+.social-button--mail {
+  color: #0072c6;
+}
+.social-button--facebook {
+  color: #3b5999;
+}
+.social-button--linkedin {
+  color: #0077b5;
+}
+.social-button--github {
+  color: #6e5494;
+}
+.social-button--codepen {
+  color: #212121;
+}
+.social-button--steam {
+  color: #7da10e;
+}
+.social-button--snapchat {
+  color: #eec900;
+}
+.social-button--twitter {
+  color: #55acee;
+}
+.social-button--instagram {
+  color: #e4405f;
+}
+.social-button--npmjs {
+  color: #c12127;
+}
+
 /*OPTIMIZATIONS FOR SMALLER SCREENS*/
 @media screen and (max-width:300px) {
      .AboutSectionImage{
