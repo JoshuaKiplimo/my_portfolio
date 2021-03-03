@@ -241,6 +241,41 @@ a, a:hover {
   width: 200px;
   height: 200px;
 }
+#Skills{
+  min-height: 600px;
+  max-height: 4000px;
+  background-color: #cfcfc4;
+  padding-top: 20px;
+   }
+.skills-thumb {
+    
+    border-radius: 10px;
+    padding: 80px;
+    position: relative;
+    margin: 5%;
+    text-align:justify;
+    color: black;
+    width: 100%;
+    height: 80%;
+}
+.skills_items{
+   width: 100%;
+}
+.skills_items p{
+    color: white;
+   background-color: rgb(48, 45, 45);
+   border-radius: 14px;
+   float: left;
+   padding: 6px;
+   margin-left: 20px;
+   font-size: 18px;
+}
+.skills_intro{
+    font-weight: bold;
+    margin: 30px;
+    justify-content: left;
+    font-size: 20px;
+}
 /*connect section*/
 .tm-footer {
   position: absolute;
@@ -268,7 +303,7 @@ a, a:hover {
   padding: 100px 20px 20px 20px;
 }
 footer{
-  color: black;
+  color: #cfcfc4;
   bottom: 5px;
   margin-top: 1%;
 }
@@ -317,32 +352,14 @@ footer{
 .social-button--mail {
   color: #0072c6;
 }
-.social-button--facebook {
-  color: #3b5999;
-}
 .social-button--linkedin {
   color: #0077b5;
 }
 .social-button--github {
   color: #6e5494;
 }
-.social-button--codepen {
-  color: #212121;
-}
-.social-button--steam {
-  color: #7da10e;
-}
-.social-button--snapchat {
-  color: #eec900;
-}
 .social-button--twitter {
   color: #55acee;
-}
-.social-button--instagram {
-  color: #e4405f;
-}
-.social-button--npmjs {
-  color: #c12127;
 }
 
 /*OPTIMIZATIONS FOR SMALLER SCREENS*/
@@ -505,8 +522,8 @@ footer{
        min-height: 1000px;
    }
    .projectButton{
-   position: absolute;
-   bottom:   20px;
-   left: 30%;
+        position: absolute;
+        bottom:   20px;
+        left: 30%;
 }
 }
