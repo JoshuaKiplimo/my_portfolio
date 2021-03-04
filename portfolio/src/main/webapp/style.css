@@ -228,16 +228,184 @@ a, a:hover {
 	bottom: 20px;
 	left: 40%;
 }
-
+#Experience{
+   min-height: 1700px;
+   max-height: 4000px;
+   background-color: #cfcfc4;
+   padding-top: 80px;
+   color: black;
+   }
+.leftText {
+  align-content: center;
+  margin: 1% 1%;
+  font-weight: bold;
+  text-align: center;
+}
+.rightText{
+  justify-content: center;
+  text-align: justify;
+}
+.google, .CodePath, .CPI, .Tutor, .NSBE{
+  margin-top: 10%;
+}
+.logo{
+  width: 200px;
+  height: 200px;
+}
+#Skills{
+  min-height: 600px;
+  max-height: 4000px;
+  background-color: #cfcfc4;
+  padding-top: 20px;
+   }
+.skills-thumb {
+    
+    border-radius: 10px;
+    padding: 80px;
+    position: relative;
+    margin: 5%;
+    text-align:justify;
+    color: black;
+    width: 100%;
+    height: 80%;
+}
+.skills_items{
+   width: 100%;
+}
+.skills_items p{
+    color: white;
+   background-color: rgb(48, 45, 45);
+   border-radius: 14px;
+   float: left;
+   padding: 6px;
+   margin-left: 20px;
+   font-size: 18px;
+}
+.skills_intro{
+    font-weight: bold;
+    margin: 30px;
+    justify-content: left;
+    font-size: 20px;
+}
+/*connect section*/
+.tm-footer {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+}
+.tm-footer a {
+	color: #fff;
+}
+.tm-footer a:hover {
+	color: #9CF;
+}
+.tm-footer-link {
+  color: white;
+}
+.tm-footer-link:hover,
+.tm-footer-link:focus {
+  color: #38B;
+  text-decoration: none;
+}
+#footer{
+  background-color: #ddd;
+  padding: 100px 20px 20px 20px;
+}
+footer{
+  color: #cfcfc4;
+  bottom: 5px;
+  margin-top: 1%;
+}
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -10px;
+}
+.social-buttons__button {
+  margin: 10px 5px 0;
+}
+.social-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 70px;
+  height: 70px;
+  text-decoration: none;
+}
+.social-button__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border-radius: 100%;
+  background: #fff;
+  text-align: center;
+}
+.social-button i, .social-button svg {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.social-button i {
+  font-size: 28px;
+}
+.social-button svg {
+  height: 40%;
+  width: 40%;
+}
+.social-button--mail {
+  color: #0072c6;
+}
+.social-button--linkedin {
+  color: #0077b5;
+}
+.social-button--github {
+  color: #6e5494;
+}
+.social-button--twitter {
+  color: #55acee;
+}
+.notification{
+    display: none;
+}
 /*OPTIMIZATIONS FOR SMALLER SCREENS*/
+@media screen and (max-width:217px){
+    #about, #Projects, #Experience, #Skills, #footer,#home, .classIntro{
+        display: none;
+    }
+    .notification{
+        display: block;
+        position: absolute;
+        font-weight: bolder;
+        color: black;
+        backdrop-filter: blur(6px);
+        width: 100%;
+        height: 100%;
+        background-color:white;
+    }
+}
+
 @media screen and (max-width:300px) {
 	.AboutSectionImage {
 		display: none;
 	}
 	.AboutSectionText {
 		width: 100%;
-	}
+    }
+    .logo{
+         width: 100px;
+         height: 100px;
+     } 
+
 }
+
 @media screen and (max-width:384px) {
     .navbar-brand{
         top: 30%;
