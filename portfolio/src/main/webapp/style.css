@@ -124,9 +124,12 @@ a, a:hover {
   font-family: 'Monaco', Courier New;
 }
 .Wtext{
+  text-align: left;
   float: left;
   padding: 5px;
-  left: 5px;
+  
+  left: 0px;
+
 }
 #about {
 	width: 100%;
@@ -385,6 +388,9 @@ footer{
     color: white;
     font-size: 16px;
     font-family: 'Monaco', Courier New;
+}
+#fact{
+    color: #507d2a;
 }
 /*OPTIMIZATIONS FOR SMALLER SCREENS*/
 @media screen and (max-width:217px){
