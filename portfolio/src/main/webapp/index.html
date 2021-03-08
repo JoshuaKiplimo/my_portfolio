@@ -8,10 +8,11 @@
     <!--Link to Bootstrap CDN - Using bootstap to also optimize for smaller screens-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
     <!--Link to font awesome icons-->
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   </head>
-  <body>
+  <body onLoad="getRandomInfo()">
     <!-- Home section -->
     <section id="home">
       <!-- Main Navigation Bar-->
@@ -32,6 +33,11 @@
       </nav>
     
       <!--ABOUT SECTION-->
+
+      <div id = "welcomeSection" class="col-md-8 col-md-3 col-sm-12">
+         
+        </div>
+              
     <div class="text-center About-container">
         <div class="About-container-inner">
         <div class="window">
@@ -41,19 +47,19 @@
             <!-- window title -->
           </div>
           <div id="windowText">
+            <div class="Wtext"><p onclick="getRandomInfo()">Joshua.RandomFact(): 🥚🐇🐾</p><div id="fact"></div></div>
             <div class="Wtext"><p>Joshua.Interests()
                 : <span style="color: #507d2a">"Coding", "Creative Writing"</span></p></div> 
             <div class="Wtext"><p>Joshua.Root()
-                : <span style="color: #507d2a">"Kenya"</span></p></div>
+                : <span style="color: #507d2a">"South Carolina"</span></p></div>
             <div class="Wtext"><p>Joshua.Major()
                 : <span style="color: #507d2a"> "Computer Science" </span> </p></div>
             <div class="Wtext"><p>Joshua.Graduation()
                 : <span style="color: #507d2a"> 2023 </span></p></div>
-            <div class="Wtext"><p>Joshua.MoreInfo(): <span style="color: #507d2a"> scroll down </span></p></div>
           </div>
          </div>
           </div>
-        </div>
+        </div>    
     </div>
     </section> 
   <!--This div marks separation between diffrent sections of my portfolio website-->
