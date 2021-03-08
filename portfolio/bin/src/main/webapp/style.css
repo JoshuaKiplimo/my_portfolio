@@ -375,17 +375,6 @@ footer{
 .notification{
     display: none;
 }
-#welcomeSection{
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    background: #343434;
-    border-radius: 6px;
-    height: auto;
-    color: white;
-    font-size: 16px;
-    font-family: 'Monaco', Courier New;
-}
 /*OPTIMIZATIONS FOR SMALLER SCREENS*/
 @media screen and (max-width:217px){
     #about, #Projects, #Experience, #Skills, #footer,#home, .classIntro{
@@ -453,9 +442,6 @@ footer{
         bottom: 20px;
         left: 30%;
     }
-    #welcomeSection{
-     display: none;
-    }
 }       
 @media screen and (min-width:384px) and (max-width: 515px)  {
     .navbar{
@@ -501,9 +487,6 @@ footer{
         bottom:   20px;
         left: 30%;
 }   
-    #welcomeSection{
-        display: none;
-    }
 }
 @media screen and (min-width:483px) and (max-width: 1000px) {
     .Navlinks{
@@ -512,9 +495,6 @@ footer{
     .items3{
         display: none;
        }
-    #welcomeSection{
-        display: none;
-    }
     }
 @media screen and (max-width: 562px) {
     .window {
