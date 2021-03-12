@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "jkiprono-sps-spring21",
+  "private_key_id": "e1317507a5d94d08dab2fa713127d13163af29ee",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDPBccZetraptnY\n61n40Tc6fWIbaMf9cECGwsRnkkuqm/gYGOs0Q+/whNM8TDXpV9PpDstIgLIx9IVA\nUPI69BtIM4TyaEZxAsXgszbtV016dnYAa8ppUfueJHVPByCrOR+kgpJxLFvj10NK\nvwSp6mbI9kW8XxPkbXyw8M+UTEbXj2Ye7ICzDFK6cm9+aVEkW8vPttt6VxQ3oiyR\nAu+w4Lfd04jMfy8jPNHWM/UEzSVBKIqk6BOyUBIIJLC51ZqyP7ezxJT9NH4wwdqS\nnjDMPezpIm1cR+pN+OdHgNtdpITr+0m/q/RwqRJzi6gymAnvLAeOMOx7tmkfmevh\nRKKYKyG9AgMBAAECggEAF01rr/MJCmk929xV+BtjROVTHd8JT9OK99WZh5z11mzl\nm/TGGM/NhLxhYzKi3jKWyu9xiKYv006rkbtAIMxUUSgMvr+9BMB5UdsVA4R7AfNZ\nQfU1ce3FTZ4wntDLEmraJHQsFAAYZx4rrWYF74hPwdlyrQrjXCgfdnKMswEeTOoG\nhxhjIQhh2CUO5tUnftGo01YkVd1wUTUlPC98L3JcTRzZNLXKKyoHoN1JU6Jwn2Lc\nAe6MkWPBKTHhQkE3NJp3c7uWg+DVNVlSovaj5GzCrGBl9L3sjr8AcADTb/S4/oPz\n7uAeH3CEegrkYDoreRvg62n8cK30t73O8HnsIsuhgwKBgQDwLNj9ffmhX5oe5S61\n9ePyYktpkN4FCT6gWIpFH4gcu5Lf0OwuK0UQNcv8od2786eD4UZOBO1KSbbZmKkU\ndHa+2y/DQEtTUlXdIpBj2Zcn9hUkP85e7K7Jpn4HdOL9Ar80HxNr3WIKfN+pYQxp\nNANIdfPKd9W+q+GoAYV1024/ewKBgQDcqbqMfMf1NdfYQGL+wfIdidfA62I06P1N\na1yedWz/QmTnAEtFRxuAid6M5VuqOhsDoABVLWOd/elT4JScwiqIUdPHmxMb7bab\ntZEDQw8wHq1as26nk4gukF+Oj/ZScUXyoRjmnQHBOYbC+vBjNb3vSBMftpRqMS/e\njcbYn3mCJwKBgGHKIN+1tzpZbqs9rXMxFwrNst7cuUlbpkArTMEwQX9RcE/pBQEX\nZRtgjBnk3h906bPsuW9y2hrxQJ4AZneJo/+5xwy81O6sC4HqXNgK9Fy0+Y603BYS\nUGiSfaYTlYhm4esa7BFzJkQW7ApPFXqQTvXl8MlzWXg1C8AYPnrnB3CZAoGAInN9\nZKG2tloJsQGccxnkqyfyP3SAiLI3mfbBJxw+QDwldMte9Rn8+TyNOoI0pYcc4JwC\ncUn825Xg7++IRFEsQsxDvE5B1YJvmC/ozBGUNXcUqayKAi/OezafNKrVUlnNCeyM\n7rRkqb5Jg/eZwGOLm+gs1C61TT8QsjaAbSG43tECgYBgb17pn1f7FLMb4N6FqPm/\nvgcW9m5hH8A08726baonHjrRNKg9Hqm6K2IwiN/RHJXZ75Ooe0Hwb/kEmaKkWdx/\np30vUuN2nMSaJRv7xsbL4BwZMtEP0qmuaxQIpfrCY//SVzaj15k/TBFI2qX20X8q\n5F58as98pMhAM8UmtW4iPw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "joshuaproject@jkiprono-sps-spring21.iam.gserviceaccount.com",
+  "client_id": "116871835941610894702",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/joshuaproject%40jkiprono-sps-spring21.iam.gserviceaccount.com"
+}

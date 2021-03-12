@@ -8,11 +8,11 @@
     <!--Link to Bootstrap CDN - Using bootstap to also optimize for smaller screens-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
-    <script src="script.js"></script>
     <!--Link to font awesome icons-->
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="script.js"></script>
   </head>
-  <body onLoad="getRandomInfo()">
+  <body onload="getRandomInfo()" >
     <!-- Home section -->
     <section id="home">
       <!-- Main Navigation Bar-->
@@ -47,7 +47,7 @@
             <!-- window title -->
           </div>
           <div id="windowText">
-            <div class="Wtext"><p onclick="getRandomInfo()">Joshua.RandomFact(): 🥚🐇🐾</p><div id="fact"></div></div>
+            <div class="Wtext Wtext2"><p onclick="getRandomInfo()">Joshua.RandomFact()🥚🐇</p><div id="fact"></div></div>
             <div class="Wtext"><p>Joshua.Interests()
                 : <span style="color: #507d2a">"Coding", "Creative Writing"</span></p></div> 
             <div class="Wtext"><p>Joshua.Root()
@@ -74,10 +74,11 @@
 		<div class="row">
 			<div class="col-md-3 col-sm-4"> <img src="Images/joshuakiprono.jpg" class="AboutSectionImage" alt="About"> </div>
 			<div class="col-md-9 col-sm-12">
-				<div class="AboutSectionText">
-					<p> I am currently a sophomore majoring in Computer Science at Claflin University, SC. My interest in computing is borne out of the desire to be a creator of my interests, which is my artistic side, as well as the desire to satisfy and grow problem solving and analytical skills.</p>
-					<p>I have a primary interest in growing my full stack dev capabilities while my secondary and long term interests are Cyber Security and Artificial Intelligence. and I am open to any opportunity that will grow my skills and ultimately contribute in meaningful contributions to communities that I find myself in.</p>
-					<center> <a type="button" class="btn btn-primary btn-lg" href="JResume.pdf" target="_blank" style="color: white">Resume</a> </center>
+				<div  class="AboutSectionText">
+					<p class = "ToAnalyse"> I am currently a sophomore majoring in Computer Science at Claflin University, SC. My interest in computing is borne out of the desire to be a creator of my interests, which is my artistic side, as well as the desire to satisfy and grow problem solving and analytical skills.</p>
+					<p class = "ToAnalyse">I have a primary interest in growing my full stack dev capabilities while my secondary and long term interests are Cyber Security and Artificial Intelligence. and I am open to any opportunity that will grow my skills and ultimately contribute in meaningful contributions to communities that I find myself in.</p>
+                    <center> <a type="button" class="btn btn-primary btn-lg" href="JResume.pdf" target="_blank" style="color: white">Resume</a> </center>
+                   
 				</div>
 			</div>
 		</div>
@@ -247,6 +248,32 @@
 <!--This is a section for social buttons/connect--->
 <div class="classIntro">
 	<center>
+		<p>Sentiment Analysis</p>
+    </center>
+</div>
+<!--This is a section containing a place where users can try out sentiment analysis-->
+<section id="SentimentAnalysis" name="next">
+	<div class="container top-padding2">
+		<div class="row">
+	        <div class="col-md-3 col-sm-12 mx-auto">
+                <p class = "sentiment_intro">Try out sentiment analysis</p>
+                <p class= "S_Intro">Enter some text below</p>
+                <div class="input-group">
+                    <label class="input">
+                      <input class="input_field" type="text" placeholder=" " />
+                    </label>
+                </div>
+                <div class="input-group-btn" >
+                    <a onclick="GetSentiment()" class="btn2">Analyse</a>
+                </div>
+                <div id = "FinalSentiment">        
+                </div>
+            </div>
+        </div>    
+</section>
+
+<div class="classIntro">
+	<center>
 		<p> Connect? </p>
 	</center>
 </div>
@@ -265,7 +292,6 @@
     <center>
     <p style="color: black;"> email: jkiprono@claflin.edu </p>
 </center>
-
 </section>
 <section>
     <div class="notification">

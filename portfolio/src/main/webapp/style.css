@@ -127,9 +127,14 @@ margin-left: 10%;
  text-align: left;
  float: left;
  padding: 5px;
- 
  left: 0px;
-
+}
+.Wtext2{
+ background-color: #51514F;
+ border-radius: 3px;
+ left: 0px;
+ height: auto;
+ width: auto;
 }
 #about {
  width: 100%;
@@ -392,6 +397,61 @@ footer{
 #fact{
    color: #507d2a;
 }
+#SentimentAnalysis{
+    min-height: 400px;
+    max-height: 500px;
+    background-color: #cfcfc4;
+    padding-top: 20px;
+}
+.input_label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: black;
+  line-height: 1.2;
+}
+.input_field {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 1px solid black;
+  color: black;
+  background: transparent;
+  border-radius: 3px;
+}
+.btn2{
+    color: black !important;
+    background: #E1E5B1;
+    padding: 6px;
+    height: auto;
+    width: 40%;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    }
+.sentiment_intro{
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-family: 'Monaco', Courier New;
+    display: block;
+    padding: 1%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+.c{
+    border: 1px solid red;
+    
+}
+.S_Intro{
+    color: black;
+}
+.top-padding2{
+    padding-top: 5%;
+}
+
 /*OPTIMIZATIONS FOR SMALLER SCREENS*/
 @media screen and (max-width:217px){
    #about, #Projects, #Experience, #Skills, #footer,#home, .classIntro{
