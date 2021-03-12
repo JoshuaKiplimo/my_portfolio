@@ -12,18 +12,12 @@ async function getRandomInfo() {
   const factContainer = document.getElementById('fact');
   factContainer.innerText = '"'+fact+'"';
 }
-
-
-
 function GetSentiment(){
   var element1 = document.getElementsByTagName("input")[0].value;
   console.log(element1);
   returnSentiment(element1);
-
 }
-
 async function returnSentiment(text){
-
 const responseFromServer = await fetch('/sentimentExtract', {
         method: 'post',
         body: JSON.stringify(text),
@@ -39,25 +33,17 @@ if (Response < -0.5){
    sentimentContainer.innerHTML = '<p> <span class= "style1"> Sentiment: </span> '+ '<span class= "style">' + sentiment + '</span>' + "</p>";
    document.getElementsByClassName("style")[0].setAttribute("style", "font-size: 13px;color: white;background: #E53C06; border-radius: 2px; padding: 2px; font-family: 'Monaco'");
    document.getElementsByClassName("style1")[0].setAttribute("style", "font-size: 13px;color: white;background: black; border-radius: 2px; padding: 2px; font-family: 'Monaco'");
-
 }
 else if(Response > -0.5 && Response < 0.5){
     sentiment = "Neutral"
    sentimentContainer.innerHTML = '<p> <span class= "style1"> Sentiment: </span> '+ '<span class= "style">' + sentiment + '</span>' + "</p>";
    document.getElementsByClassName("style")[0].setAttribute("style", "font-size: 13px;color: white;background: #E59E06; border-radius: 2px; padding: 2px;font-family: 'Monaco'");
     document.getElementsByClassName("style1")[0].setAttribute("style", "font-size: 13px;color: white;background: black; border-radius: 2px; padding: 2px; font-family: 'Monaco'");
-
 }
 else{
     sentiment = "Positive"
    sentimentContainer.innerHTML = '<p> <span class= "style1"> Sentiment: </span> '+ '<span class= "style">' + sentiment + '</span>' + "</p>";
    document.getElementsByClassName("style")[0].setAttribute("style", "font-size: 13px;color: white;background: #429F10; border-radius: 2px; padding: 2px; font-family: 'Monaco'");
-      document.getElementsByClassName("style1")[0].setAttribute("style", "font-size: 13px;color: white;background: black; border-radius: 2px; padding: 2px; font-family: 'Monaco'");
-
-}
-
-
-
-
- 
+    document.getElementsByClassName("style1")[0].setAttribute("style", "font-size: 13px;color: white;background: black; border-radius: 2px; padding: 2px; font-family: 'Monaco'");
+} 
 }
