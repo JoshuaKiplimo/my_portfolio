@@ -25,20 +25,17 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/sentimentExtract")
 public class SentimentFind extends HttpServlet {
-    
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    if ("POST".equalsIgnoreCase(request.getMethod())) {
-     {
+    {
     String text = request.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
     Document doc =
-        Document.newBuilder().setContent(text).setType(Document.Type.PLAIN_TEXT).build();
+    Document.newBuilder().setContent(text).setType(Document.Type.PLAIN_TEXT).build();
     LanguageServiceClient languageService = LanguageServiceClient.create();
     Sentiment sentiment = languageService.analyzeSentiment(doc).getDocumentSentiment();
     float score = sentiment.getScore();
     languageService.close();
     response.getWriter().println(score); 
-  }
   }
 }  
 }
